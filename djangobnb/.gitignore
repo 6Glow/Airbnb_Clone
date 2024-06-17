@@ -1,36 +1,71 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
-.trunk
-# testing
-/coverage
+# Packages #
+############
+# it's better to unpack these files and commit the raw source because binaries can cause conflicts
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# next.js
-/.next/
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# IDE specific files #
+######################
+/.idea/
+/*.iml
+/*.ipr
+/*.iws
+/.vs/
+/*.user
+/*.suo
+/*.userprefs
+
+# Build results #
+#################
+/bin/
+/obj/
 /out/
-.vscode
-# production
-/build
+/build/
+/dist/
 
-# misc
-.DS_Store
-*.pem
+# Node modules #
+################
+/node_modules/
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Environment files #
+#####################
+.env
+.env.dev
+# Misc #
+########
+.sass-cache/
+/connect.lock
+/coverage/
+/libpeerconnection.log
+/npm-debug.log*
+/testem.log
+/yarn-error.log
 
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
